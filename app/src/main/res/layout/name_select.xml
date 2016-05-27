@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_alignParentBottom="true"
+      >
+    <LinearLayout
+        android:id="@+id/id_name_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginBottom="5dp"
+        >
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/game_line"
+        />
+    <ch.com.guessmusic.myview.WordGridView
+        android:id="@+id/id_gridword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="8"
+        android:verticalSpacing="1dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        ></ch.com.guessmusic.myview.WordGridView>
+  </LinearLayout>
+
+</RelativeLayout>

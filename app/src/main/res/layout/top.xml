@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/index_bar"
+    >
+  <ImageButton
+      android:id="@+id/id_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="10dp"
+      android:layout_centerVertical="true"
+      android:background="@drawable/back_selector"
+      />
+  <FrameLayout
+      android:id="@+id/id_fl_1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="10dp"
+      >
+    <ImageButton
+        android:id="@+id/id_addCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addcoin_selector"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="75dp"
+        android:src="@drawable/game_coin_icon"
+        />
+    <TextView
+        android:id="@+id/id_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:text="1000"
+        android:textStyle="bold"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/colorWhite"
+        />
+
+  </FrameLayout>
+
+</RelativeLayout>

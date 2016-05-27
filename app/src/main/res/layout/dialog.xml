@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buytip_bg"
+    android:orientation="vertical"
+    >
+  <TextView
+      android:id="@+id/id_dialog_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginTop="16dp"
+      android:layout_gravity="center"
+      android:text="提示"
+      android:textSize="30sp"
+      android:textColor="@color/colorBlack"
+      android:textStyle="bold"
+      />
+  <TextView
+      android:layout_weight="2"
+      android:id="@+id/id_dialog_message"
+      android:layout_width="wrap_content"
+      android:gravity="center"
+      android:layout_height="0dp"
+      android:layout_gravity="center"
+      android:text="是否花费90金币获得一个提示?"
+      android:textSize="25sp"
+      android:textColor="@color/colorBlack"
+      android:textStyle="bold"
+      />
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="horizontal"
+      android:layout_gravity="center"
+      android:gravity="center"
+      >
+    <ImageButton
+        android:id="@+id/id_no_prompt"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="@drawable/dialog_no_selector"
+        />
+
+    <ImageButton
+        android:id="@+id/id_yes_prompt"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/dialog_yes_selector"
+        />
+  </LinearLayout>
+
+
+</LinearLayout>

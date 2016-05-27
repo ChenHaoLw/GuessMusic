@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">GuessMusic</string>
+  <string name="ranking">您已几百了全国%1$s的用户</string>
+</resources>

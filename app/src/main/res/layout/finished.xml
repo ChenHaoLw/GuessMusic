@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allpass_back1"
+    >
+  <!--1.top.xml-->
+  <include layout="@layout/top"/>
+  <FrameLayout
+      android:layout_above="@+id/id_pass_us_ll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginLeft="5dp"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/allpass_back0"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/allpass_text0"
+        />
+  </FrameLayout>
+
+  <LinearLayout
+      android:id="@+id/id_pass_us_ll"
+      android:layout_above="@+id/id_pass_wechat_fl"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="15dp"
+      >
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_rank_text"
+        />
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_coin_icon"
+        />
+  </LinearLayout>
+
+  <FrameLayout
+      android:id="@+id/id_pass_wechat_fl"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="5dp"
+      android:layout_centerInParent="true"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allpass_back0"
+        />
+    <ImageButton
+        android:id="@+id/id_pass_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/pass_share_selector"
+        />
+  </FrameLayout>
+
+  <LinearLayout android:id="@+id/id_pass_dialog_about"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_below="@+id/id_pass_wechat_fl"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="15dp"
+    >
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/game_wx_text"
+      />
+  <ImageView
+      android:layout_marginLeft="5dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/game_coin_icon"
+      />
+</LinearLayout>
+
+  <FrameLayout
+      android:id="@+id/id_dialog_pass_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="15dp"
+      android:layout_marginBottom="15dp"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allpass_text2"
+        />
+    <ImageButton
+        android:id="@+id/id_pass_eamil"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_width="120dp"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/pass_email_selector"
+        />
+  </FrameLayout>
+
+
+
+</RelativeLayout>
